@@ -1,0 +1,30 @@
+{
+    "name": "hlx/redis",
+    "description": "The Hlx Redis package.",
+    "license": "MIT",
+    "require": {
+        "php": "^8.1",
+        "hlx/collections": "^1.0",
+        "hlx/contracts": "^1.0",
+        "hlx/macroable": "^1.0",
+        "hlx/support": "^1.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Hlx\\Redis\\": ""
+        }
+    },
+    "suggest": {
+        "ext-redis": "Required to use the phpredis connector (^4.0|^5.0).",
+        "predis/predis": "Required to use the predis connector (^2.0.2)."
+    },
+    "extra": {
+        "branch-alias": {
+            "dev-master": "1.x-dev"
+        }
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "minimum-stability": "dev"
+}

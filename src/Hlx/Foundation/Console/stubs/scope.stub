@@ -1,0 +1,18 @@
+<?php
+
+namespace {{ namespace }};
+
+use Hlx\Database\Eloquent\Builder;
+use Hlx\Database\Eloquent\Model;
+use Hlx\Database\Eloquent\Scope;
+
+class {{ class }} implements Scope
+{
+    /**
+     * Apply the scope to a given Eloquent query builder.
+     */
+    public function apply(Builder $builder, Model $model): void
+    {
+        //
+    }
+}

@@ -1,0 +1,29 @@
+{
+    "name": "hlx/cookie",
+    "description": "The Hlx Cookie package.",
+    "license": "MIT",
+    "require": {
+        "php": "^8.1",
+        "ext-hash": "*",
+        "hlx/collections": "^1.0",
+        "hlx/contracts": "^1.0",
+        "hlx/macroable": "^1.0",
+        "hlx/support": "^1.0",
+        "symfony/http-foundation": "^6.2",
+        "symfony/http-kernel": "^6.2"
+    },
+    "autoload": {
+        "psr-4": {
+            "Hlx\\Cookie\\": ""
+        }
+    },
+    "extra": {
+        "branch-alias": {
+            "dev-master": "1.x-dev"
+        }
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "minimum-stability": "dev"
+}

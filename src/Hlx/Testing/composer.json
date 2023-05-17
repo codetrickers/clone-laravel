@@ -1,0 +1,35 @@
+{
+    "name": "hlx/testing",
+    "description": "The Hlx Testing package.",
+    "license": "MIT",
+    "require": {
+        "php": "^8.1",
+        "ext-mbstring": "*",
+        "hlx/collections": "^1.0",
+        "hlx/contracts": "^1.0",
+        "hlx/macroable": "^1.0",
+        "hlx/support": "^1.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Hlx\\Testing\\": ""
+        }
+    },
+    "extra": {
+        "branch-alias": {
+            "dev-master": "1.x-dev"
+        }
+    },
+    "suggest": {
+        "brianium/paratest": "Required to run tests in parallel (^6.0).",
+        "hlx/console": "Required to assert console commands (^1.0).",
+        "hlx/database": "Required to assert databases (^1.0).",
+        "hlx/http": "Required to assert responses (^1.0).",
+        "mockery/mockery": "Required to use mocking (^1.5.1).",
+        "phpunit/phpunit": "Required to use assertions and run tests (^9.5.8|^1.0.7)."
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "minimum-stability": "dev"
+}

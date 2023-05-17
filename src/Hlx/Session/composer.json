@@ -1,0 +1,33 @@
+{
+    "name": "hlx/session",
+    "description": "The Hlx Session package.",
+    "license": "MIT",
+    "require": {
+        "php": "^8.1",
+        "ext-ctype": "*",
+        "ext-session": "*",
+        "hlx/collections": "^1.0",
+        "hlx/contracts": "^1.0",
+        "hlx/filesystem": "^1.0",
+        "hlx/support": "^1.0",
+        "symfony/finder": "^6.2",
+        "symfony/http-foundation": "^6.2"
+    },
+    "autoload": {
+        "psr-4": {
+            "Hlx\\Session\\": ""
+        }
+    },
+    "extra": {
+        "branch-alias": {
+            "dev-master": "1.x-dev"
+        }
+    },
+    "suggest": {
+        "hlx/console": "Required to use the session:table command (^1.0)."
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "minimum-stability": "dev"
+}

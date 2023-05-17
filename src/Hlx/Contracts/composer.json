@@ -1,0 +1,24 @@
+{
+    "name": "hlx/contracts",
+    "description": "The Hlx Contracts package.",
+    "license": "MIT",
+    "require": {
+        "php": "^8.1",
+        "psr/container": "^1.1.1|^2.0.1",
+        "psr/simple-cache": "^1.0|^2.0|^3.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Hlx\\Contracts\\": ""
+        }
+    },
+    "extra": {
+        "branch-alias": {
+            "dev-master": "1.x-dev"
+        }
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "minimum-stability": "dev"
+}

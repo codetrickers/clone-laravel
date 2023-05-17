@@ -1,0 +1,28 @@
+<?php
+
+use Hlx\Database\Migrations\Migration;
+use Hlx\Database\Schema\Blueprint;
+use Hlx\Support\Facades\Schema;
+
+return new class extends Migration
+{
+    /**
+     * Run the migrations.
+     */
+    public function up(): void
+    {
+        Schema::table('{{ table }}', function (Blueprint $table) {
+            //
+        });
+    }
+
+    /**
+     * Reverse the migrations.
+     */
+    public function down(): void
+    {
+        Schema::table('{{ table }}', function (Blueprint $table) {
+            //
+        });
+    }
+};

@@ -1,0 +1,37 @@
+{
+    "name": "hlx/validation",
+    "description": "The Hlx Validation package.",
+    "license": "MIT",
+    "require": {
+        "php": "^8.1",
+        "ext-filter": "*",
+        "ext-mbstring": "*",
+        "brick/math": "^0.9.3|^0.10.2|^0.11",
+        "egulias/email-validator": "^3.2.5|^4.0",
+        "hlx/collections": "^1.0",
+        "hlx/container": "^1.0",
+        "hlx/contracts": "^1.0",
+        "hlx/macroable": "^1.0",
+        "hlx/support": "^1.0",
+        "hlx/translation": "^1.0",
+        "symfony/http-foundation": "^6.2",
+        "symfony/mime": "^6.2"
+    },
+    "autoload": {
+        "psr-4": {
+            "Hlx\\Validation\\": ""
+        }
+    },
+    "extra": {
+        "branch-alias": {
+            "dev-master": "1.x-dev"
+        }
+    },
+    "suggest": {
+        "hlx/database": "Required to use the database presence verifier (^1.0)."
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "minimum-stability": "dev"
+}

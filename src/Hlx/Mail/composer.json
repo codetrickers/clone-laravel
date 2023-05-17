@@ -1,0 +1,37 @@
+{
+    "name": "hlx/mail",
+    "description": "The Hlx Mail package.",
+    "license": "MIT",
+    "require": {
+        "php": "^8.1",
+        "hlx/collections": "^1.0",
+        "hlx/container": "^1.0",
+        "hlx/contracts": "^1.0",
+        "hlx/macroable": "^1.0",
+        "hlx/support": "^1.0",
+        "league/commonmark": "^2.2",
+        "psr/log": "^1.0|^2.0|^3.0",
+        "symfony/mailer": "^6.2",
+        "tijsverkoyen/css-to-inline-styles": "^2.2.5"
+    },
+    "autoload": {
+        "psr-4": {
+            "Hlx\\Mail\\": ""
+        }
+    },
+    "extra": {
+        "branch-alias": {
+            "dev-master": "1.x-dev"
+        }
+    },
+    "suggest": {
+        "aws/aws-sdk-php": "Required to use the SES mail driver (^3.235.5).",
+        "symfony/http-client": "Required to use the Symfony API mail transports (^6.2).",
+        "symfony/mailgun-mailer": "Required to enable support for the Mailgun mail transport (^6.2).",
+        "symfony/postmark-mailer": "Required to enable support for the Postmark mail transport (^6.2)."
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "minimum-stability": "dev"
+}

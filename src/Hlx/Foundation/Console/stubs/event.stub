@@ -1,0 +1,36 @@
+<?php
+
+namespace {{ namespace }};
+
+use Hlx\Broadcasting\Channel;
+use Hlx\Broadcasting\InteractsWithSockets;
+use Hlx\Broadcasting\PresenceChannel;
+use Hlx\Broadcasting\PrivateChannel;
+use Hlx\Contracts\Broadcasting\ShouldBroadcast;
+use Hlx\Foundation\Events\Dispatchable;
+use Hlx\Queue\SerializesModels;
+
+class {{ class }}
+{
+    use Dispatchable, InteractsWithSockets, SerializesModels;
+
+    /**
+     * Create a new event instance.
+     */
+    public function __construct()
+    {
+        //
+    }
+
+    /**
+     * Get the channels the event should broadcast on.
+     *
+     * @return array<int, \Hlx\Broadcasting\Channel>
+     */
+    public function broadcastOn(): array
+    {
+        return [
+            new PrivateChannel('channel-name'),
+        ];
+    }
+}

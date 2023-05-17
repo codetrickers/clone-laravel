@@ -1,0 +1,27 @@
+{
+    "name": "hlx/process",
+    "description": "The Hlx Process package.",
+    "license": "MIT",
+    "require": {
+        "php": "^8.1",
+        "hlx/collections": "^1.0",
+        "hlx/contracts": "^1.0",
+        "hlx/macroable": "^1.0",
+        "hlx/support": "^1.0",
+        "symfony/process": "^6.2"
+    },
+    "autoload": {
+        "psr-4": {
+            "Hlx\\Process\\": ""
+        }
+    },
+    "extra": {
+        "branch-alias": {
+            "dev-master": "1.x-dev"
+        }
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "minimum-stability": "dev"
+}
